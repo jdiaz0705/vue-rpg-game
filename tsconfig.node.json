@@ -4,5 +4,6 @@
   "compilerOptions": {
     "composite": true,
     "types": ["node"]
-  }
+  },
+  "ignoreDepreications": "5.0"
 }

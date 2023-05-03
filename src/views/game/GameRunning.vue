@@ -19,18 +19,8 @@ export default {
 </script>
 
 <template>
-
-  <div class="bannerDiv">
-      <h1 class="title">TITLE</h1>
-  </div>
-  
-  <div class="userEnter">
-      <label>Enter Username</label>
-
-      <input type="text" class="userInput" id="userTextEntry" />
-
-      <button class="userSubmitButton" @click="submitUserName()">Enter</button>
-  </div>
+    
+Hello, {{ playerStore.username }}
 
 </template>
 
@@ -40,11 +30,13 @@ body {
     background-color: rgb(77, 77, 73);
 }
 .bannerDiv {
+    display: flex;
     background-color: #f1f1f1;
     text-align: center;
-    padding: 50px;
-    margin-top: 0px;
-    margin-bottom: 0px;
+    margin: 0;
+    height: 400px;
+    justify-content: center;
+    align-content: center;
 }
 
 .title {
@@ -57,6 +49,8 @@ body {
 label {
     text-align: center;
     font-size: 26px;
+    margin-top: 10px;
+    color: white;
 }
 
 .userEnter {
@@ -67,18 +61,15 @@ label {
 
 .userInput {
     width: 40%;
-
     font-size: 28px;  
-
     text-align: center;
-
-    margin: 15px auto 0px auto
+    margin: 5px auto 0px auto
 }
 
 .userSubmitButton {
     font-size: 26px;
     width: 18%;
-    margin: 40px auto 0px auto
+    margin: 10px auto 0px auto
 }
 
 </style>
